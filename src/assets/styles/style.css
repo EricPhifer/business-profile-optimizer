@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-primary: #78350f;
+  --color-secondary: #d97706;
+  --color-accent: #0d9488;
+  --color-bg: #ffffff;
+  --color-surface: #fffbeb;
+  --color-text: #451a03;
+  --color-text-secondary: #92400e;
+
+  --radius-default: 8px;
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-primary: #fbbf24;
+  --color-secondary: #f59e0b;
+  --color-accent: #2dd4bf;
+  --color-bg: #1c1917;
+  --color-surface: #292524;
+  --color-text: #fffbeb;
+  --color-text-secondary: #fde68a;
+}
+
+/* Base styles */
+html {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+}
+
+/* Print styles — photo checklist print mode */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-section,
+  .print-section * {
+    visibility: visible;
+  }
+  .print-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

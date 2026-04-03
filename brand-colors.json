@@ -1,0 +1,90 @@
+{
+  "colors": {
+    "primary": "#78350f",
+    "secondary": "#d97706",
+    "accent": "#0d9488",
+    "light": {
+      "primary": "#78350f",
+      "primaryHover": "#92400e",
+      "primaryLight": "#fffbeb",
+      "secondary": "#d97706",
+      "secondaryHover": "#b45309",
+      "accent": "#0d9488",
+      "accentHover": "#0b7d73",
+      "bgPrimary": "#ffffff",
+      "bgSecondary": "#fffbeb",
+      "bgTertiary": "#fef3c7",
+      "bgCard": "#ffffff",
+      "bgHover": "#fef3c7",
+      "textPrimary": "#451a03",
+      "textSecondary": "#92400e",
+      "textMuted": "#a16207",
+      "textInverse": "#ffffff",
+      "border": "#e2e8f0",
+      "borderLight": "#fef3c7",
+      "success": "#16a34a",
+      "successLight": "#f0fdf4",
+      "warning": "#f97316",
+      "warningLight": "#fff7ed",
+      "danger": "#dc2626",
+      "dangerLight": "#fef2f2",
+      "sidebarBg": "#fffbeb",
+      "sidebarText": "#451a03",
+      "sidebarHover": "#fef3c7",
+      "sidebarActive": "#78350f"
+    },
+    "dark": {
+      "primary": "#fbbf24",
+      "primaryHover": "#f59e0b",
+      "primaryLight": "#292524",
+      "secondary": "#f59e0b",
+      "secondaryHover": "#d97706",
+      "accent": "#2dd4bf",
+      "accentHover": "#14b8a6",
+      "bgPrimary": "#1c1917",
+      "bgSecondary": "#292524",
+      "bgTertiary": "#44403c",
+      "bgCard": "#292524",
+      "bgHover": "#44403c",
+      "textPrimary": "#fffbeb",
+      "textSecondary": "#fde68a",
+      "textMuted": "#fbbf24",
+      "textInverse": "#1c1917",
+      "border": "#44403c",
+      "borderLight": "#292524",
+      "success": "#4ade80",
+      "successLight": "#292524",
+      "warning": "#fb923c",
+      "warningLight": "#292524",
+      "danger": "#f87171",
+      "dangerLight": "#292524",
+      "sidebarBg": "#1c1917",
+      "sidebarText": "#fffbeb",
+      "sidebarHover": "#292524",
+      "sidebarActive": "#fbbf24"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "name": "Inter",
+      "importUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+      "weights": [400, 500, 600, 700]
+    },
+    "body": {
+      "name": "Inter",
+      "importUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+      "weights": [400, 500, 600]
+    }
+  },
+  "logos": {
+    "primary": "",
+    "dark": "",
+    "favicon": ""
+  },
+  "borderRadius": "0.5rem",
+  "guidelines": {
+    "voice": "",
+    "usage": "",
+    "notes": ""
+  }
+}
