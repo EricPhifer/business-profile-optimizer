@@ -7,6 +7,7 @@ export type BusinessType =
   | 'retail'
   | 'creative'
   | 'technology'
+  | 'web_agency'
 
 export type DeliverableStatus = 'draft' | 'published' | 'expired' | 'archived'
 

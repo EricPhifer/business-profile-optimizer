@@ -52,6 +52,7 @@ const businessTypes: { value: BusinessType; label: string }[] = [
   { value: 'retail', label: 'Retail' },
   { value: 'creative', label: 'Creative' },
   { value: 'technology', label: 'Technology' },
+  { value: 'web_agency', label: 'Web Design / Agency' },
 ]
 
 const isNew = computed(() => route.params.id === 'new')

@@ -7,6 +7,7 @@ export type BusinessType =
   | 'retail'
   | 'creative'
   | 'technology'
+  | 'web_agency'
 
 export interface GBPTypeContent {
   categories: {
@@ -1145,6 +1146,169 @@ export const GBP_CONTENT: Record<BusinessType, GBPTypeContent> = {
         'Thank you for the great review! At {{businessName}}, we are passionate about building technology that works for real businesses in {{cityRegion}}. It is rewarding to hear that our work is making a difference for your team. We look forward to continuing the partnership!',
       mixed:
         'We appreciate your feedback and take it seriously. At {{businessName}}, we hold ourselves to a high standard and want every client in {{cityRegion}} to feel confident in our work. Please contact us directly so we can discuss your experience and make it right.',
+    },
+  },
+
+  // ──────────────────────────────────────────────────
+  // WEB AGENCY — solo/small web design + maintenance studio
+  // ──────────────────────────────────────────────────
+  web_agency: {
+    descriptionTemplate:
+      '{{businessName}} is a web design and maintenance studio in {{cityRegion}} serving nonprofits, churches, HOAs, and local organizations. {{businessDescription}} Every website is built for long-term reliability — not just launched and left. Clients stay on monthly maintenance plans that keep their sites fast, secure, and up to date, with a real person watching over their online presence every month.',
+
+    categories: {
+      primary: 'Web designer',
+      secondary: [
+        'Internet marketing service',
+        'Website designer',
+        'Graphic designer',
+        'Marketing agency',
+        'Non-profit organization',
+        'Software company',
+      ],
+      rationale:
+        '"Web designer" is the most direct match for how people search for your services and how Google classifies this work. "Internet marketing service" captures the SEO and digital presence side of what you do. Remove any secondary categories that don\'t reflect your actual service offerings.',
+    },
+
+    services: [
+      {
+        name: 'Website Design',
+        descriptionTemplate:
+          'Custom websites designed for {{cityRegion}} nonprofits, churches, HOAs, and local organizations — built to be fast, accessible, and easy to manage.',
+      },
+      {
+        name: 'Website Maintenance',
+        descriptionTemplate:
+          'Monthly maintenance plans that keep your website secure, updated, and performing well — so you can focus on your mission, not your website.',
+      },
+      {
+        name: 'Content Management Setup',
+        descriptionTemplate:
+          'Simple content management systems that let your team update text, images, and pages without needing a developer for every change.',
+      },
+      {
+        name: 'Website Redesign',
+        descriptionTemplate:
+          'Redesign your existing website to better reflect your mission, serve your audience, and perform well in search results.',
+      },
+      {
+        name: 'SEO Foundations',
+        descriptionTemplate:
+          'On-page SEO setup that helps your organization show up when people in {{cityRegion}} search for what you do.',
+      },
+      {
+        name: 'Web Presence Audit',
+        descriptionTemplate:
+          'A scored review of your website, Google Business Profile, and online presence — with a clear report of what to fix and why it matters.',
+      },
+      {
+        name: 'Google Business Profile Setup',
+        descriptionTemplate:
+          'Complete setup and optimization of your Google Business Profile so your organization shows up on Google Maps and local search results.',
+      },
+      {
+        name: 'Nonprofit & Church Websites',
+        descriptionTemplate:
+          'Websites built specifically for mission-driven organizations — designed to communicate clearly, build trust, and support the people you serve.',
+      },
+    ],
+
+    qAndA: [
+      {
+        question: 'What kinds of organizations do you work with?',
+        answer:
+          '{{businessName}} primarily serves nonprofits, churches, HOAs, and local service businesses in {{cityRegion}} and beyond. If your organization has a mission to serve your community, we are a good fit.',
+      },
+      {
+        question: 'Do you offer ongoing website maintenance?',
+        answer:
+          'Yes. Every website we build comes with an optional monthly maintenance plan. We handle updates, security patches, backups, and performance monitoring so you never have to worry about your site going down or falling behind.',
+      },
+      {
+        question: 'How much does a website cost?',
+        answer:
+          'Website projects start at $5,250 and include a content management system, legal pages, and a maintenance plan option. We are transparent about pricing upfront — no surprise costs at the end of the project.',
+      },
+      {
+        question: 'How long does a website project take?',
+        answer:
+          'Most website projects take 6 to 12 weeks from kickoff to launch, depending on how quickly content and feedback come in. We keep you informed throughout the process.',
+      },
+      {
+        question: 'Do you work with organizations outside of {{cityRegion}}?',
+        answer:
+          'Yes. While {{businessName}} is based in {{cityRegion}}, we work with nonprofits, churches, and mission-driven organizations across the country. Most of our process happens online.',
+      },
+      {
+        question: 'Can you help us update our existing website?',
+        answer:
+          'It depends on how the site was built. We are happy to take a look and give you an honest assessment. In some cases a redesign makes more sense than patching an outdated site.',
+      },
+      {
+        question: 'What does a monthly maintenance plan include?',
+        answer:
+          'Maintenance plans include plugin and software updates, security monitoring, performance checks, a monthly report, and a set number of content update hours each month. Plans start at $300 per month.',
+      },
+      {
+        question: 'Do you offer payment plans for website projects?',
+        answer:
+          'Yes. We offer a split payment option — a deposit at the start of the project and the balance due at launch. We also offer monthly installment options for qualifying organizations.',
+      },
+      {
+        question: 'What platform do you build websites on?',
+        answer:
+          'We build on modern, standards-based technology — primarily Vue.js with a headless CMS. This gives clients fast, secure websites they can actually manage without relying on us for every small change.',
+      },
+      {
+        question: 'How do we get started?',
+        answer:
+          'The first step is a Web Presence Health Check — a scored review of your current online presence. From there we can talk about whether a new website or maintenance plan makes sense for your organization.',
+      },
+      {
+        question: 'Do you offer discounts for nonprofits or churches?',
+        answer:
+          'We do not offer blanket discounts, but our pricing is designed to be accessible for mission-driven organizations. We are also flexible on payment structure for nonprofits operating on tight budgets.',
+      },
+      {
+        question: 'Who will I be working with?',
+        answer:
+          'You will work directly with Eric Phifer — not an account manager or a junior contractor. Every project is handled personally from first call to final launch and ongoing maintenance.',
+      },
+    ],
+
+    photoChecklist: [
+      { item: 'Headshot or professional photo of Eric', why: 'Clients hire you, not a faceless agency. A clear, approachable headshot is the single most trust-building photo on your profile.', priority: 'high' },
+      { item: 'Screenshot or mockup of a recent client website', why: 'Shows the quality and style of your work immediately. Use a laptop or device mockup frame for a polished presentation.', priority: 'high' },
+      { item: 'Workspace or home office setup', why: 'Grounds your business in a real place. Does not need to be elaborate — clean and organized communicates professionalism.', priority: 'high' },
+      { item: 'Cover photo — wide format workspace or device mockup (16:9)', why: 'The GBP cover photo is the first visual impression on Maps and Search. Make it clean and on-brand.', priority: 'high' },
+      { item: 'Logo displayed clearly (on screen, signage, or materials)', why: 'Reinforces brand recognition and helps Google associate your profile with your visual identity.', priority: 'medium' },
+      { item: 'Before and after website comparison', why: 'One of the most compelling ways to show the value of a redesign. Screenshot the old site next to the new one.', priority: 'medium' },
+      { item: 'Client type context photo (church, nonprofit building, community event)', why: 'Signals to prospective clients in those sectors that you understand their world.', priority: 'medium' },
+      { item: 'Screenshot of a health check or analytics report', why: 'Demonstrates the analytical and reporting side of your maintenance work — not just design.', priority: 'medium' },
+      { item: 'Team or collaboration photo (even if solo — with a client)', why: 'A photo with a real client communicates relationship and trust better than a solo office shot.', priority: 'low' },
+      { item: 'Conference, meetup, or community event attendance', why: 'Shows you are active in your professional community — relevant if you attend local business or nonprofit events.', priority: 'low' },
+    ],
+
+    postTemplates: {
+      intro: {
+        body: '{{businessName}} helps nonprofits, churches, HOAs, and local organizations in {{cityRegion}} build websites they can actually rely on. Every project includes a content management system, legal pages, and the option for ongoing monthly maintenance — so your website keeps working long after launch. If your organization\'s website is outdated, hard to update, or just not doing its job, we should talk.',
+        cta: 'Start with a free Web Presence Health Check — link in profile.',
+      },
+      event: {
+        body: 'Is your organization\'s website helping or hurting your credibility? {{businessName}} is now offering Web Presence Health Checks for nonprofits and community organizations in {{cityRegion}}. You will get a scored report covering your website, Google Business Profile, social presence, speed, and trust signals — with specific recommendations for what to fix first. It takes less than 10 minutes to get started.',
+        cta: 'Get your Health Check — visit our website or call to get started.',
+      },
+      impact: {
+        body: 'A local nonprofit in {{cityRegion}} recently launched a new website with {{businessName}}. Within the first month, their contact form submissions doubled and their Google Business Profile views increased significantly — simply because their online presence finally matched the quality of the work they do in the community. A reliable website is not a luxury for mission-driven organizations. It is how the people you serve find you.',
+        cta: 'See if your website is working as hard as you are — ask about our Health Check.',
+      },
+    },
+
+    reviewTemplates: {
+      positive:
+        'Thank you so much for taking the time to share this — it genuinely means a lot. Working with organizations like yours is exactly why {{businessName}} exists. I am glad the website is serving you well, and I look forward to continuing to support your mission.',
+      mixed:
+        'Thank you for the honest feedback — I take it seriously. I am sorry your experience did not fully meet expectations. I would like to make it right. Please reach out directly at eric@ericphiferllc.com and we can talk through what happened and how to resolve it.',
     },
   },
 }

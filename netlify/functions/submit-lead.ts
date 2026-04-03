@@ -5,7 +5,7 @@ import * as crypto from 'crypto'
 
 const VALID_BUSINESS_TYPES = [
   'local_service', 'consultant', 'nonprofit', 'church',
-  'hoa', 'retail', 'creative', 'technology',
+  'hoa', 'retail', 'creative', 'technology', 'web_agency',
 ]
 
 const handler: Handler = async (event) => {
